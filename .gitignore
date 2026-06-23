@@ -13,4 +13,8 @@
 *.apk
 *.aab
 *.ap_
+*.hprof
+app/build/
+core/*/build/
+build/
 

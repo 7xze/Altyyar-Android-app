@@ -1,0 +1,148 @@
+/* Copyright 2019 Conny Duck
+ *
+ * This file is a part of Tayyar.
+ *
+ * This program is free software; you can redistribute it and/or modify it under the terms of the
+ * GNU General Public License as published by the Free Software Foundation; either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ * Tayyar is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even
+ * the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+ * Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with Tayyar; if not,
+ * see <http://www.gnu.org/licenses>. */
+
+package com.altayyar.app.presentation.ui.adapter
+
+import android.content.res.ColorStateList
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.color.MaterialColors
+import com.altayyar.app.R
+import com.altayyar.app.databinding.ItemPollBinding
+import com.altayyar.app.entity.Emoji
+import com.altayyar.app.util.BindingHolder
+import com.altayyar.app.util.emojify
+import com.altayyar.app.util.visible
+import com.altayyar.app.presentation.state.PollOptionViewData
+import com.altayyar.app.presentation.state.buildDescription
+import com.altayyar.app.presentation.state.calculatePercent
+
+class PollAdapter : RecyclerView.Adapter<BindingHolder<ItemPollBinding>>() {
+
+    private var pollOptions: List<PollOptionViewData> = emptyList()
+    private var voteCount: Int = 0
+    private var votersCount: Int? = null
+    private var mode = RESULT
+    private var emojis: List<Emoji> = emptyList()
+    private var resultClickListener: View.OnClickListener? = null
+    private var animateEmojis = false
+    private var enabled = true
+
+    @JvmOverloads
+    fun setup(
+        options: List<PollOptionViewData>,
+        voteCount: Int,
+        votersCount: Int?,
+        emojis: List<Emoji>,
+        mode: Int,
+        resultClickListener: View.OnClickListener?,
+        animateEmojis: Boolean,
+        enabled: Boolean = true
+    ) {
+        this.pollOptions = options
+        this.voteCount = voteCount
+        this.votersCount = votersCount
+        this.emojis = emojis
+        this.mode = mode
+        this.resultClickListener = resultClickListener
+        this.animateEmojis = animateEmojis
+        this.enabled = enabled
+        notifyDataSetChanged()
+    }
+
+    fun getSelected(): List<Int> {
+        return pollOptions.filter { it.selected }
+            .map { pollOptions.indexOf(it) }
+    }
+
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): BindingHolder<ItemPollBinding> {
+        val binding = ItemPollBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return BindingHolder(binding)
+    }
+
+    override fun getItemCount() = pollOptions.size
+
+    override fun onBindViewHolder(holder: BindingHolder<ItemPollBinding>, position: Int) {
+        val option = pollOptions[position]
+
+        val resultTextView = holder.binding.statusPollOptionResult
+        val radioButton = holder.binding.statusPollRadioButton
+        val checkBox = holder.binding.statusPollCheckbox
+
+        resultTextView.visible(mode == RESULT)
+        radioButton.visible(mode == SINGLE)
+        checkBox.visible(mode == MULTIPLE)
+
+        radioButton.isEnabled = enabled
+        checkBox.isEnabled = enabled
+
+        if (mode == RESULT) {
+            val percent = calculatePercent(option.votesCount, votersCount, voteCount)
+            resultTextView.text = buildDescription(option.title, percent, option.voted, resultTextView.context, resultTextView)
+                .emojify(emojis, resultTextView, animateEmojis)
+
+            val level = percent * 100
+            val optionColor = if (option.voted) {
+                R.color.colorBackgroundHighlight
+            } else {
+                R.color.colorBackgroundAccent
+            }
+
+            holder.binding.pollLayout.setBackgroundResource(R.drawable.poll_option_background)
+            holder.binding.pollLayout.background.level = level
+            holder.binding.pollLayout.background.setTint(resultTextView.context.getColor(optionColor))
+            holder.binding.root.strokeColor = holder.binding.root.context.getColor(optionColor)
+            resultTextView.setOnClickListener(resultClickListener)
+        } else {
+            holder.binding.pollLayout.background = null
+
+            if (option.selected) {
+                holder.binding.root.setCardBackgroundColor(ColorStateList.valueOf(MaterialColors.getColor(holder.binding.root, com.google.android.material.R.attr.colorSurface)))
+                holder.binding.root.strokeColor = MaterialColors.getColor(holder.binding.root, com.google.android.material.R.attr.colorSurface)
+            } else {
+                holder.binding.root.setCardBackgroundColor(ColorStateList.valueOf(MaterialColors.getColor(holder.binding.root, android.R.attr.colorBackground)))
+                holder.binding.root.strokeColor = MaterialColors.getColor(holder.binding.root, R.attr.colorBackgroundAccent)
+            }
+            if (mode == SINGLE) {
+                radioButton.text = option.title.emojify(emojis, radioButton, animateEmojis)
+                radioButton.isChecked = option.selected
+                radioButton.setOnClickListener {
+                    pollOptions.forEachIndexed { index, pollOption ->
+                        pollOption.selected = index == holder.bindingAdapterPosition
+                        notifyItemChanged(index)
+                    }
+                }
+            } else { // mode == MULTIPLE
+                checkBox.text = option.title.emojify(emojis, checkBox, animateEmojis)
+                checkBox.isChecked = option.selected
+                checkBox.setOnCheckedChangeListener { _, isChecked ->
+                    pollOptions[holder.bindingAdapterPosition].selected = isChecked
+                    notifyItemChanged(holder.bindingAdapterPosition)
+                }
+            }
+        }
+    }
+
+    companion object {
+        const val RESULT = 0
+        const val SINGLE = 1
+        const val MULTIPLE = 2
+    }
+}
