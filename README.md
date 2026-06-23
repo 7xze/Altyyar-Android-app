@@ -212,5 +212,6 @@ GNU General Public License v3.0
 <p align="center">
   <strong>فخر برمجة سورية 🇸🇾</strong><br/>
   <strong>شركة 7X</strong><br/>
-  <strong>© 2024-2025 AlTayyar. All rights reserved.</strong>
+  <strong>جميع الحقوق محفوظة لـ 7X</strong><br/>
+  <strong>© 2026-2027 7X. All rights reserved.</strong>
 </p>
