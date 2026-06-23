@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tayyar brand colors - Professional Dark Navy & Gold -->
+    <color name="tayyar_blue">#1A2744</color>
+    <color name="tayyar_blue_light">#2D3F62</color>
+    <color name="tayyar_blue_dark">#0D1526</color>
+    <color name="tayyar_blue_lighter">#4A6B9E</color>
+    
+    <color name="tayyar_orange">#B8860B</color>
+    <color name="tayyar_orange_light">#D4A843</color>
+    
+    <color name="tayyar_green_dark">#1B5E20</color>
+    <color name="tayyar_green">#2E7D32</color>
+    <color name="tayyar_green_light">#4CAF50</color>
+    <color name="tayyar_green_lighter">#A5D6A7</color>
+    
+    <color name="tayyar_red">#C62828</color>
+    <color name="tayyar_red_lighter">#EF5350</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="notification_color">@color/tayyar_blue</color>
+
+    <!-- Grey palette - warm, neutral -->
+    <color name="tayyar_grey_05">#0D0D0D</color>
+    <color name="tayyar_grey_10">#1A1A1A</color>
+    <color name="tayyar_grey_15">#262626</color>
+    <color name="tayyar_grey_20">#333333</color>
+    <color name="tayyar_grey_25">#404040</color>
+    <color name="tayyar_grey_30">#4D4D4D</color>
+    <color name="tayyar_grey_40">#666666</color>
+    <color name="tayyar_grey_50">#808080</color>
+    <color name="tayyar_grey_70">#B3B3B3</color>
+    <color name="tayyar_grey_80">#CCCCCC</color>
+    <color name="tayyar_grey_90">#E6E6E6</color>
+    <color name="tayyar_grey_95">#F2F2F2</color>
+
+    <color name="tayyar_grey_blue_light">#8FA8C8</color>
+    <color name="tayyar_grey_blue_dark">#2A3F5E</color>
+
+    <color name="transparent_tayyar_blue">#8C1A2744</color>
+    <color name="transparent_black">#8F000000</color>
+    <color name="transparent_tayyar_grey_10">#CC1A1A1A</color>
+    <color name="header_background_filter_dark">#44000000</color>
+    <color name="header_background_filter_light">#66FFFFFF</color>
+    <color name="transparent_statusbar_background">#44000000</color>
+
+    <!-- colors used in the app icon -->
+    <color name="icon_background">#0D1526</color>
+    <color name="icon_highlight">#D4A843</color>
+
+    <!-- colors used in the elephant friend drawables -->
+    <color name="elephant_friend_border_color">#121419</color>
+    <color name="elephant_friend_accent_color">?attr/colorPrimary</color>
+    <color name="elephant_friend_body_color">#9BAEC8</color>
+    <color name="elephant_friend_dark_body_color_1">#8192A6</color>
+    <color name="elephant_friend_dark_body_color_2">#7F90A4</color>
+    <color name="elephant_friend_light_color_1">#CAD4E0</color>
+    <color name="elephant_friend_light_color_2">#d9e1e8</color>
+</resources>

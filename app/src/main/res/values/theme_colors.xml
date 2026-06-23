@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/tayyar_blue</color>
+    <color name="colorSecondary">#C9A84C</color>
+    <color name="colorSurface">@color/tayyar_grey_95</color>
+    <color name="colorPrimaryDark">@color/tayyar_blue_dark</color>
+
+    <color name="colorOnPrimary">@color/white</color>
+
+    <color name="colorBackground">@color/white</color>
+    <color name="windowBackground">@color/tayyar_grey_90</color>
+
+    <color name="colorSecondaryContainer">@color/tayyar_grey_80</color>
+
+    <color name="textColorPrimary">@color/tayyar_grey_10</color>
+    <color name="textColorSecondary">@color/tayyar_grey_40</color>
+    <color name="textColorTertiary">@color/tayyar_grey_50</color>
+    <color name="textColorDisabled">@color/tayyar_grey_70</color>
+
+    <color name="iconColor">@color/tayyar_grey_50</color>
+
+    <color name="colorBackgroundAccent">@color/tayyar_grey_70</color>
+    <color name="colorBackgroundHighlight">#C9A84C</color>
+    <color name="dividerColor">@color/tayyar_grey_80</color>
+    <color name="dividerColorOther">@color/tayyar_grey_90</color>
+
+    <color name="favoriteButtonActiveColor">#C9A84C</color>
+
+    <color name="warning_color">@color/tayyar_red</color>
+
+    <color name="headerBackgroundFilter">@color/header_background_filter_light</color>
+
+    <bool name="lightNavigationBar">true</bool>
+
+    <color name="botBadgeForeground">@color/tayyar_grey_20</color>
+    <color name="botBadgeBackground">@color/white</color>
+
+    <color name="toolbarIconBackgroundColor">#CCF2F2F2</color>
+
+    <color name="placeholderColor">@color/tayyar_grey_90</color>
+
+    <!-- colors used to show inserted/deleted text -->
+    <color name="view_edits_background_insert">@color/tayyar_green_lighter</color>
+    <color name="view_edits_background_delete">@color/tayyar_red_lighter</color>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_color">@color/tayyar_green</color>
+    <color name="icon_background">#0D1526</color>
+    <color name="icon_highlight">#D4A843</color>
+</resources>

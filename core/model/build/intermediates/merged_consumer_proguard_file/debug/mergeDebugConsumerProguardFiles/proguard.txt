@@ -1,0 +1,732 @@
+-keepnames class com.altayyar.app.entity.AccessToken
+-if class com.altayyar.app.entity.AccessToken
+-keep class com.altayyar.app.entity.AccessTokenJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Account
+-if class com.altayyar.app.entity.Account
+-keep class com.altayyar.app.entity.AccountJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Account
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Account {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.util.Date,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,int,int,int,com.altayyar.app.entity.AccountSource,boolean,java.util.List,java.util.List,com.altayyar.app.entity.Account,java.util.List,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.AccountSource
+-if class com.altayyar.app.entity.AccountSource
+-keep class com.altayyar.app.entity.AccountSourceJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.AccountSource
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.AccountSource {
+    public synthetic <init>(com.altayyar.app.entity.Status$Visibility,java.lang.Boolean,java.lang.String,java.util.List,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.AccountWarning
+-if class com.altayyar.app.entity.AccountWarning
+-keep class com.altayyar.app.entity.AccountWarningJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Announcement$Reaction
+-if class com.altayyar.app.entity.Announcement$Reaction
+-keep class com.altayyar.app.entity.Announcement_ReactionJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Announcement$Reaction
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Announcement$Reaction {
+    public synthetic <init>(java.lang.String,int,boolean,java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Announcement
+-if class com.altayyar.app.entity.Announcement
+-keep class com.altayyar.app.entity.AnnouncementJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Announcement
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Announcement {
+    public synthetic <init>(java.lang.String,java.lang.String,java.util.Date,java.util.Date,boolean,java.util.Date,java.util.Date,boolean,java.util.List,java.util.List,java.util.List,java.util.List,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.AppCredentials
+-if class com.altayyar.app.entity.AppCredentials
+-keep class com.altayyar.app.entity.AppCredentialsJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Attachment$Focus
+-if class com.altayyar.app.entity.Attachment$Focus
+-keep class com.altayyar.app.entity.Attachment_FocusJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Attachment$MetaData
+-if class com.altayyar.app.entity.Attachment$MetaData
+-keep class com.altayyar.app.entity.Attachment_MetaDataJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Attachment$MetaData
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Attachment$MetaData {
+    public synthetic <init>(com.altayyar.app.entity.Attachment$Focus,java.lang.Float,com.altayyar.app.entity.Attachment$Size,com.altayyar.app.entity.Attachment$Size,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Attachment$Size
+-if class com.altayyar.app.entity.Attachment$Size
+-keep class com.altayyar.app.entity.Attachment_SizeJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Attachment$Size
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Attachment$Size {
+    public synthetic <init>(int,int,double,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Attachment
+-if class com.altayyar.app.entity.Attachment
+-keep class com.altayyar.app.entity.AttachmentJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Attachment
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Attachment {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,com.altayyar.app.entity.Attachment$MetaData,com.altayyar.app.entity.Attachment$Type,java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Conversation
+-if class com.altayyar.app.entity.Conversation
+-keep class com.altayyar.app.entity.ConversationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Conversation
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Conversation {
+    public synthetic <init>(java.lang.String,java.util.List,com.altayyar.app.entity.Status,boolean,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.DeletedStatus
+-if class com.altayyar.app.entity.DeletedStatus
+-keep class com.altayyar.app.entity.DeletedStatusJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.DeletedStatus
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.DeletedStatus {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.String,com.altayyar.app.entity.Status$Visibility,boolean,java.util.List,com.altayyar.app.entity.Poll,java.util.Date,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Emoji
+-if class com.altayyar.app.entity.Emoji
+-keep class com.altayyar.app.entity.EmojiJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Emoji
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Emoji {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Error
+-if class com.altayyar.app.entity.Error
+-keep class com.altayyar.app.entity.ErrorJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Error
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Error {
+    public synthetic <init>(java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Field
+-if class com.altayyar.app.entity.Field
+-keep class com.altayyar.app.entity.FieldJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Field
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Field {
+    public synthetic <init>(java.lang.String,java.lang.String,java.util.Date,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Filter
+-if class com.altayyar.app.entity.Filter
+-keep class com.altayyar.app.entity.FilterJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Filter
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Filter {
+    public synthetic <init>(java.lang.String,java.lang.String,java.util.List,java.util.Date,com.altayyar.app.entity.Filter$Action,java.util.List,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.FilterKeyword
+-if class com.altayyar.app.entity.FilterKeyword
+-keep class com.altayyar.app.entity.FilterKeywordJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.FilterResult
+-if class com.altayyar.app.entity.FilterResult
+-keep class com.altayyar.app.entity.FilterResultJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.FilterV1
+-if class com.altayyar.app.entity.FilterV1
+-keep class com.altayyar.app.entity.FilterV1JsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.FilterV1
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.FilterV1 {
+    public synthetic <init>(java.lang.String,java.lang.String,java.util.List,java.util.Date,boolean,boolean,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.HashTag
+-if class com.altayyar.app.entity.HashTag
+-keep class com.altayyar.app.entity.HashTagJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.HashTag
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.HashTag {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.Boolean,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$ApiVersions
+-if class com.altayyar.app.entity.Instance$ApiVersions
+-keep class com.altayyar.app.entity.Instance_ApiVersionsJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Instance$ApiVersions
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Instance$ApiVersions {
+    public synthetic <init>(java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Configuration$Accounts
+-if class com.altayyar.app.entity.Instance$Configuration$Accounts
+-keep class com.altayyar.app.entity.Instance_Configuration_AccountsJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Configuration$MediaAttachments
+-if class com.altayyar.app.entity.Instance$Configuration$MediaAttachments
+-keep class com.altayyar.app.entity.Instance_Configuration_MediaAttachmentsJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Instance$Configuration$MediaAttachments
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Instance$Configuration$MediaAttachments {
+    public synthetic <init>(java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Long,java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Configuration$Polls
+-if class com.altayyar.app.entity.Instance$Configuration$Polls
+-keep class com.altayyar.app.entity.Instance_Configuration_PollsJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Instance$Configuration$Polls
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Instance$Configuration$Polls {
+    public synthetic <init>(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Configuration$Statuses
+-if class com.altayyar.app.entity.Instance$Configuration$Statuses
+-keep class com.altayyar.app.entity.Instance_Configuration_StatusesJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Instance$Configuration$Statuses
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Instance$Configuration$Statuses {
+    public synthetic <init>(java.lang.Integer,java.lang.Integer,java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Configuration$Translation
+-if class com.altayyar.app.entity.Instance$Configuration$Translation
+-keep class com.altayyar.app.entity.Instance_Configuration_TranslationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Configuration$Urls
+-if class com.altayyar.app.entity.Instance$Configuration$Urls
+-keep class com.altayyar.app.entity.Instance_Configuration_UrlsJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Instance$Configuration$Urls
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Instance$Configuration$Urls {
+    public synthetic <init>(java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Configuration
+-if class com.altayyar.app.entity.Instance$Configuration
+-keep class com.altayyar.app.entity.Instance_ConfigurationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Instance$Configuration
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Instance$Configuration {
+    public synthetic <init>(com.altayyar.app.entity.Instance$Configuration$Urls,com.altayyar.app.entity.Instance$Configuration$Accounts,com.altayyar.app.entity.Instance$Configuration$Statuses,com.altayyar.app.entity.Instance$Configuration$MediaAttachments,com.altayyar.app.entity.Instance$Configuration$Polls,com.altayyar.app.entity.Instance$Configuration$Translation,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Contact
+-if class com.altayyar.app.entity.Instance$Contact
+-keep class com.altayyar.app.entity.Instance_ContactJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Registrations
+-if class com.altayyar.app.entity.Instance$Registrations
+-keep class com.altayyar.app.entity.Instance_RegistrationsJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Instance$Registrations
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Instance$Registrations {
+    public synthetic <init>(boolean,boolean,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Rule
+-if class com.altayyar.app.entity.Instance$Rule
+-keep class com.altayyar.app.entity.Instance_RuleJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Thumbnail$Versions
+-if class com.altayyar.app.entity.Instance$Thumbnail$Versions
+-keep class com.altayyar.app.entity.Instance_Thumbnail_VersionsJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Instance$Thumbnail$Versions
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Instance$Thumbnail$Versions {
+    public synthetic <init>(java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Thumbnail
+-if class com.altayyar.app.entity.Instance$Thumbnail
+-keep class com.altayyar.app.entity.Instance_ThumbnailJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Instance$Thumbnail
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Instance$Thumbnail {
+    public synthetic <init>(java.lang.String,java.lang.String,com.altayyar.app.entity.Instance$Thumbnail$Versions,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Usage$Users
+-if class com.altayyar.app.entity.Instance$Usage$Users
+-keep class com.altayyar.app.entity.Instance_Usage_UsersJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Instance$Usage
+-if class com.altayyar.app.entity.Instance$Usage
+-keep class com.altayyar.app.entity.Instance_UsageJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Instance
+-if class com.altayyar.app.entity.Instance
+-keep class com.altayyar.app.entity.InstanceJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Instance
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Instance {
+    public synthetic <init>(java.lang.String,java.lang.String,com.altayyar.app.entity.Instance$Configuration,java.util.List,com.altayyar.app.entity.PleromaConfiguration,com.altayyar.app.entity.Instance$ApiVersions,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.InstanceConfiguration
+-if class com.altayyar.app.entity.InstanceConfiguration
+-keep class com.altayyar.app.entity.InstanceConfigurationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.InstanceConfiguration
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.InstanceConfiguration {
+    public synthetic <init>(com.altayyar.app.entity.StatusConfiguration,com.altayyar.app.entity.MediaAttachmentConfiguration,com.altayyar.app.entity.PollConfiguration,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.InstanceRules
+-if class com.altayyar.app.entity.InstanceRules
+-keep class com.altayyar.app.entity.InstanceRulesJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.InstanceV1
+-if class com.altayyar.app.entity.InstanceV1
+-keep class com.altayyar.app.entity.InstanceV1JsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.InstanceV1
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.InstanceV1 {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.Integer,com.altayyar.app.entity.PollConfiguration,com.altayyar.app.entity.InstanceConfiguration,java.lang.Integer,com.altayyar.app.entity.PleromaConfiguration,java.lang.Integer,java.util.List,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Marker
+-if class com.altayyar.app.entity.Marker
+-keep class com.altayyar.app.entity.MarkerJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.MastoList
+-if class com.altayyar.app.entity.MastoList
+-keep class com.altayyar.app.entity.MastoListJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.MastoList
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.MastoList {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.MediaAttachmentConfiguration
+-if class com.altayyar.app.entity.MediaAttachmentConfiguration
+-keep class com.altayyar.app.entity.MediaAttachmentConfigurationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.MediaAttachmentConfiguration
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.MediaAttachmentConfiguration {
+    public synthetic <init>(java.util.List,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.MediaAttribute
+-if class com.altayyar.app.entity.MediaAttribute
+-keep class com.altayyar.app.entity.MediaAttributeJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.MediaAttribute
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.MediaAttribute {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.MediaTranslation
+-if class com.altayyar.app.entity.MediaTranslation
+-keep class com.altayyar.app.entity.MediaTranslationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.MediaUploadResult
+-if class com.altayyar.app.entity.MediaUploadResult
+-keep class com.altayyar.app.entity.MediaUploadResultJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.NewPoll
+-if class com.altayyar.app.entity.NewPoll
+-keep class com.altayyar.app.entity.NewPollJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.NewStatus
+-if class com.altayyar.app.entity.NewStatus
+-keep class com.altayyar.app.entity.NewStatusJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.NewStatus
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.NewStatus {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.util.List,java.util.List,java.lang.String,com.altayyar.app.entity.NewPoll,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Notification
+-if class com.altayyar.app.entity.Notification
+-keep class com.altayyar.app.entity.NotificationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Notification
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Notification {
+    public synthetic <init>(com.altayyar.app.entity.Notification$Type,java.lang.String,com.altayyar.app.entity.TimelineAccount,com.altayyar.app.entity.Status,com.altayyar.app.entity.Report,boolean,com.altayyar.app.entity.RelationshipSeveranceEvent,com.altayyar.app.entity.AccountWarning,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.NotificationPolicy$Summary
+-if class com.altayyar.app.entity.NotificationPolicy$Summary
+-keep class com.altayyar.app.entity.NotificationPolicy_SummaryJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.NotificationPolicy
+-if class com.altayyar.app.entity.NotificationPolicy
+-keep class com.altayyar.app.entity.NotificationPolicyJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.NotificationRequest
+-if class com.altayyar.app.entity.NotificationRequest
+-keep class com.altayyar.app.entity.NotificationRequestJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.NotificationSubscribeResult
+-if class com.altayyar.app.entity.NotificationSubscribeResult
+-keep class com.altayyar.app.entity.NotificationSubscribeResultJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.PleromaConfiguration
+-if class com.altayyar.app.entity.PleromaConfiguration
+-keep class com.altayyar.app.entity.PleromaConfigurationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.PleromaConfiguration
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.PleromaConfiguration {
+    public synthetic <init>(com.altayyar.app.entity.PleromaMetadata,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.PleromaFieldLimits
+-if class com.altayyar.app.entity.PleromaFieldLimits
+-keep class com.altayyar.app.entity.PleromaFieldLimitsJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.PleromaFieldLimits
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.PleromaFieldLimits {
+    public synthetic <init>(java.lang.Integer,java.lang.Integer,java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.PleromaMetadata
+-if class com.altayyar.app.entity.PleromaMetadata
+-keep class com.altayyar.app.entity.PleromaMetadataJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Poll
+-if class com.altayyar.app.entity.Poll
+-keep class com.altayyar.app.entity.PollJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Poll
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Poll {
+    public synthetic <init>(java.lang.String,java.util.Date,boolean,boolean,int,java.lang.Integer,java.util.List,boolean,java.util.List,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.PollConfiguration
+-if class com.altayyar.app.entity.PollConfiguration
+-keep class com.altayyar.app.entity.PollConfigurationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.PollConfiguration
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.PollConfiguration {
+    public synthetic <init>(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.PollOption
+-if class com.altayyar.app.entity.PollOption
+-keep class com.altayyar.app.entity.PollOptionJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.PollOption
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.PollOption {
+    public synthetic <init>(java.lang.String,java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.PreviewCard
+-if class com.altayyar.app.entity.PreviewCard
+-keep class com.altayyar.app.entity.PreviewCardJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.PreviewCard
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.PreviewCard {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.String,java.util.List,java.lang.String,java.lang.String,java.util.Date,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.PreviewCardAuthor
+-if class com.altayyar.app.entity.PreviewCardAuthor
+-keep class com.altayyar.app.entity.PreviewCardAuthorJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Relationship
+-if class com.altayyar.app.entity.Relationship
+-keep class com.altayyar.app.entity.RelationshipJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Relationship
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Relationship {
+    public synthetic <init>(java.lang.String,boolean,boolean,boolean,boolean,boolean,boolean,boolean,java.lang.Boolean,boolean,java.lang.String,java.lang.Boolean,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.RelationshipSeveranceEvent
+-if class com.altayyar.app.entity.RelationshipSeveranceEvent
+-keep class com.altayyar.app.entity.RelationshipSeveranceEventJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Report
+-if class com.altayyar.app.entity.Report
+-keep class com.altayyar.app.entity.ReportJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Report
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Report {
+    public synthetic <init>(java.lang.String,java.lang.String,java.util.List,java.util.Date,com.altayyar.app.entity.TimelineAccount,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Role
+-if class com.altayyar.app.entity.Role
+-keep class com.altayyar.app.entity.RoleJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.ScheduledStatus
+-if class com.altayyar.app.entity.ScheduledStatus
+-keep class com.altayyar.app.entity.ScheduledStatusJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.ScheduledStatusReply
+-if class com.altayyar.app.entity.ScheduledStatusReply
+-keep class com.altayyar.app.entity.ScheduledStatusReplyJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.SearchResult
+-if class com.altayyar.app.entity.SearchResult
+-keep class com.altayyar.app.entity.SearchResultJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Status$Application
+-if class com.altayyar.app.entity.Status$Application
+-keep class com.altayyar.app.entity.Status_ApplicationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Status$Application
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Status$Application {
+    public synthetic <init>(java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.Status$Mention
+-if class com.altayyar.app.entity.Status$Mention
+-keep class com.altayyar.app.entity.Status_MentionJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Status
+-if class com.altayyar.app.entity.Status
+-keep class com.altayyar.app.entity.StatusJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Status
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Status {
+    public synthetic <init>(java.lang.String,java.lang.String,com.altayyar.app.entity.TimelineAccount,java.lang.String,java.lang.String,com.altayyar.app.entity.Status,java.lang.String,java.util.Date,java.util.Date,java.util.List,int,int,int,boolean,boolean,boolean,boolean,java.lang.String,com.altayyar.app.entity.Status$Visibility,java.util.List,java.util.List,java.util.List,com.altayyar.app.entity.Status$Application,boolean,boolean,com.altayyar.app.entity.Poll,com.altayyar.app.entity.PreviewCard,java.lang.String,java.util.List,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.StatusConfiguration
+-if class com.altayyar.app.entity.StatusConfiguration
+-keep class com.altayyar.app.entity.StatusConfigurationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.StatusConfiguration
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.StatusConfiguration {
+    public synthetic <init>(java.lang.Integer,java.lang.Integer,java.lang.Integer,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.StatusContext
+-if class com.altayyar.app.entity.StatusContext
+-keep class com.altayyar.app.entity.StatusContextJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.StatusEdit
+-if class com.altayyar.app.entity.StatusEdit
+-keep class com.altayyar.app.entity.StatusEditJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.StatusEdit
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.StatusEdit {
+    public synthetic <init>(java.lang.String,java.lang.String,boolean,java.util.Date,com.altayyar.app.entity.TimelineAccount,com.altayyar.app.entity.Poll,java.util.List,java.util.List,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.StatusParams
+-if class com.altayyar.app.entity.StatusParams
+-keep class com.altayyar.app.entity.StatusParamsJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.StatusParams
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.StatusParams {
+    public synthetic <init>(java.lang.String,java.lang.Boolean,com.altayyar.app.entity.Status$Visibility,java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.StatusSource
+-if class com.altayyar.app.entity.StatusSource
+-keep class com.altayyar.app.entity.StatusSourceJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.StringField
+-if class com.altayyar.app.entity.StringField
+-keep class com.altayyar.app.entity.StringFieldJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.TimelineAccount
+-if class com.altayyar.app.entity.TimelineAccount
+-keep class com.altayyar.app.entity.TimelineAccountJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.TimelineAccount
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.TimelineAccount {
+    public synthetic <init>(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.util.List,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.TranslatedPoll
+-if class com.altayyar.app.entity.TranslatedPoll
+-keep class com.altayyar.app.entity.TranslatedPollJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.TranslatedPollOption
+-if class com.altayyar.app.entity.TranslatedPollOption
+-keep class com.altayyar.app.entity.TranslatedPollOptionJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.Translation
+-if class com.altayyar.app.entity.Translation
+-keep class com.altayyar.app.entity.TranslationJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+-if class com.altayyar.app.entity.Translation
+-keepnames class kotlin.jvm.internal.DefaultConstructorMarker
+-keepclassmembers class com.altayyar.app.entity.Translation {
+    public synthetic <init>(java.lang.String,java.lang.String,com.altayyar.app.entity.TranslatedPoll,java.util.List,java.lang.String,java.lang.String,int,kotlin.jvm.internal.DefaultConstructorMarker);
+}
+
+-keepnames class com.altayyar.app.entity.TrendingTag
+-if class com.altayyar.app.entity.TrendingTag
+-keep class com.altayyar.app.entity.TrendingTagJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
+
+-keepnames class com.altayyar.app.entity.TrendingTagHistory
+-if class com.altayyar.app.entity.TrendingTagHistory
+-keep class com.altayyar.app.entity.TrendingTagHistoryJsonAdapter {
+    public <init>(com.squareup.moshi.Moshi);
+}
