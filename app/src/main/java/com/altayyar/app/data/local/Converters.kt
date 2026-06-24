@@ -18,9 +18,9 @@ package com.altayyar.app.data.local
 import androidx.room.ProvidedTypeConverter
 import androidx.room.TypeConverter
 import com.altayyar.app.presentation.state.TabData
-import com.altayyar.app.presentation.ui.feature.conversation.ConversationAccountEntity
+import com.altayyar.app.data.local.entity.ConversationAccountEntity
 import com.altayyar.app.presentation.ui.feature.systemnotifications.NotificationChannelData
-import com.altayyar.app.createTabDataFromId
+import com.altayyar.app.presentation.state.createTabDataFromId
 import com.altayyar.app.entity.AccountWarning
 import com.altayyar.app.entity.Attachment
 import com.altayyar.app.entity.Emoji

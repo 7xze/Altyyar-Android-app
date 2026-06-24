@@ -31,6 +31,15 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.transition.TransitionManager
 import com.google.android.material.transition.MaterialArcMotion
 import com.google.android.material.transition.MaterialContainerTransform
+import com.altayyar.app.R
+import com.altayyar.app.presentation.state.DIRECT
+import com.altayyar.app.presentation.state.HASHTAG
+import com.altayyar.app.presentation.state.HOME
+import com.altayyar.app.presentation.state.LIST
+import com.altayyar.app.presentation.state.LOCAL
+import com.altayyar.app.presentation.state.NOTIFICATIONS
+import com.altayyar.app.presentation.state.TabData
+import com.altayyar.app.presentation.state.createTabDataFromId
 import com.altayyar.app.presentation.ui.adapter.ItemInteractionListener
 import com.altayyar.app.presentation.ui.adapter.TabAdapter
 import com.altayyar.app.presentation.EventHub

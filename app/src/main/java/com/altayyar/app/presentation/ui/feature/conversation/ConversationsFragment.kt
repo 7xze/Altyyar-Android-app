@@ -57,6 +57,7 @@ import com.altayyar.app.util.updateRelativeTimePeriodically
 import com.altayyar.app.util.viewBinding
 import com.altayyar.app.presentation.ui.view.ConfirmationBottomSheet.Companion.confirmFavourite
 import com.altayyar.app.presentation.state.AttachmentViewData
+import com.altayyar.app.presentation.state.ConversationViewData
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 import kotlinx.coroutines.flow.collectLatest

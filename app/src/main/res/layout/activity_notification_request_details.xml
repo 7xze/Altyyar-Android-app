@@ -12,7 +12,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainer"
-        android:name="com.altayyar.app.components.notifications.requests.details.NotificationRequestDetailsFragment"
+        android:name="com.altayyar.app.presentation.ui.feature.notifications.requests.details.NotificationRequestDetailsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />

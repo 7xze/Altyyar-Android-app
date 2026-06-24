@@ -26,6 +26,7 @@ import com.altayyar.app.entity.HashTag
 import com.altayyar.app.entity.Poll
 import com.altayyar.app.entity.Status
 import com.altayyar.app.entity.TimelineAccount
+import com.altayyar.app.presentation.state.ConversationViewData
 import com.altayyar.app.presentation.state.StatusViewData
 import com.squareup.moshi.JsonClass
 import java.util.Date

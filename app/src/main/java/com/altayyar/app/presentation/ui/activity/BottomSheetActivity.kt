@@ -29,6 +29,7 @@ import androidx.core.view.updatePadding
 import androidx.lifecycle.lifecycleScope
 import at.connyduck.calladapter.networkresult.fold
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.altayyar.app.R
 import com.altayyar.app.presentation.ui.feature.account.AccountActivity
 import com.altayyar.app.presentation.ui.feature.viewthread.ViewThreadActivity
 import com.altayyar.app.data.remote.MastodonApi

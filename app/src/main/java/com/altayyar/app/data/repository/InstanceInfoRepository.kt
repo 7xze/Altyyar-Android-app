@@ -31,6 +31,7 @@ import com.altayyar.app.di.ApplicationScope
 import com.altayyar.app.entity.Emoji
 import com.altayyar.app.entity.Instance
 import com.altayyar.app.entity.InstanceV1
+import com.altayyar.app.data.remote.InstanceInfo
 import com.altayyar.app.data.remote.MastodonApi
 import com.altayyar.app.util.isHttpNotFound
 import java.util.concurrent.ConcurrentHashMap

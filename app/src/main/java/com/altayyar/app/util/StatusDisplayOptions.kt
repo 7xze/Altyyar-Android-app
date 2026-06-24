@@ -18,8 +18,8 @@
 package com.altayyar.app.util
 
 import android.content.SharedPreferences
-import com.altayyar.app.db.entity.AccountEntity
-import com.altayyar.app.settings.PrefKeys
+import com.altayyar.app.data.local.entity.AccountEntity
+import com.altayyar.app.data.local.PrefKeys
 
 data class StatusDisplayOptions(
     @get:JvmName("animateAvatars")

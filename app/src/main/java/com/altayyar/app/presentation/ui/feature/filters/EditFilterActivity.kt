@@ -33,6 +33,7 @@ import com.google.android.material.materialswitch.MaterialSwitch
 import com.google.android.material.snackbar.Snackbar
 import com.altayyar.app.presentation.ui.activity.BaseActivity
 import com.altayyar.app.R
+import com.altayyar.app.data.remote.InstanceInfo
 import com.altayyar.app.presentation.EventHub
 import com.altayyar.app.presentation.FilterUpdatedEvent
 import com.altayyar.app.data.repository.InstanceInfoRepository

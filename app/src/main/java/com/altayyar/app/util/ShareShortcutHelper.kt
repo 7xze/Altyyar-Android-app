@@ -29,10 +29,10 @@ import androidx.core.graphics.createBitmap
 import androidx.core.graphics.drawable.IconCompat
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.GlideException
-import com.altayyar.app.MainActivity
 import com.altayyar.app.R
-import com.altayyar.app.db.AccountManager
-import com.altayyar.app.db.entity.AccountEntity
+import com.altayyar.app.presentation.ui.activity.MainActivity
+import com.altayyar.app.data.local.AccountManager
+import com.altayyar.app.data.local.entity.AccountEntity
 import com.altayyar.app.di.ApplicationScope
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject

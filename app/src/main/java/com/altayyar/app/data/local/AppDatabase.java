@@ -25,8 +25,8 @@ import androidx.room.migration.AutoMigrationSpec;
 import androidx.room.migration.Migration;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-import com.altayyar.app.TabDataKt;
-import com.altayyar.app.components.conversation.ConversationEntity;
+import com.altayyar.app.presentation.state.TabDataKt;
+import com.altayyar.app.data.local.entity.ConversationEntity;
 import com.altayyar.app.data.local.dao.AccountDao;
 import com.altayyar.app.data.local.dao.InstanceDao;
 import com.altayyar.app.data.local.dao.NotificationPolicyDao;

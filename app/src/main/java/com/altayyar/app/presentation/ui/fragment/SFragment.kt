@@ -40,7 +40,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 import com.altayyar.app.presentation.ui.activity.BaseActivity
 import com.altayyar.app.presentation.ui.activity.BottomSheetActivity
-import com.altayyar.app.PostLookupFallbackBehavior
+import com.altayyar.app.presentation.ui.activity.PostLookupFallbackBehavior
 import com.altayyar.app.R
 import com.altayyar.app.presentation.ui.activity.StatusListActivity.Companion.newHashtagIntent
 import com.altayyar.app.presentation.ui.activity.ViewMediaActivity.Companion.newIntent
@@ -51,6 +51,7 @@ import com.altayyar.app.data.repository.InstanceInfoRepository
 import com.altayyar.app.presentation.ui.feature.report.ReportActivity.Companion.getIntent
 import com.altayyar.app.data.local.AccountManager
 import com.altayyar.app.data.local.entity.AccountEntity
+import com.altayyar.app.data.remote.InstanceInfo
 import com.altayyar.app.entity.Attachment
 import com.altayyar.app.entity.Status
 import com.altayyar.app.entity.Translation

@@ -27,11 +27,11 @@ import androidx.work.Constraints
 import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
-import com.altayyar.app.settings.AppTheme
-import com.altayyar.app.settings.NEW_INSTALL_SCHEMA_VERSION
-import com.altayyar.app.settings.PrefKeys
-import com.altayyar.app.settings.PrefKeys.APP_THEME
-import com.altayyar.app.settings.SCHEMA_VERSION
+import com.altayyar.app.data.local.AppTheme
+import com.altayyar.app.data.local.NEW_INSTALL_SCHEMA_VERSION
+import com.altayyar.app.data.local.PrefKeys
+import com.altayyar.app.data.local.PrefKeys.APP_THEME
+import com.altayyar.app.data.local.SCHEMA_VERSION
 import com.altayyar.app.util.LocaleManager
 import com.altayyar.app.util.setAppNightMode
 import com.altayyar.app.worker.PruneCacheWorker

@@ -12,12 +12,12 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/preferenceFragment"
-        android:name="com.altayyar.app.components.preference.notificationpolicies.NotificationPoliciesFragment"
+        android:name="com.altayyar.app.presentation.ui.feature.preference.notificationpolicies.NotificationPoliciesFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
-    <com.altayyar.app.view.BackgroundMessageView
+    <com.altayyar.app.presentation.ui.view.BackgroundMessageView
         android:id="@+id/messageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -25,9 +25,9 @@ import androidx.work.CoroutineWorker
 import androidx.work.ForegroundInfo
 import androidx.work.WorkerParameters
 import com.altayyar.app.R
-import com.altayyar.app.components.systemnotifications.NotificationService
-import com.altayyar.app.db.AccountManager
-import com.altayyar.app.db.DatabaseCleaner
+import com.altayyar.app.presentation.ui.feature.systemnotifications.NotificationService
+import com.altayyar.app.data.local.AccountManager
+import com.altayyar.app.data.local.DatabaseCleaner
 import com.altayyar.app.util.deleteStaleCachedMedia
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject

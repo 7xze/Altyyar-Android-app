@@ -13,7 +13,7 @@ import androidx.activity.ComponentActivity
 import androidx.annotation.AnimRes
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleEventObserver
-import com.altayyar.app.BaseActivity
+import com.altayyar.app.presentation.ui.activity.BaseActivity
 
 fun Activity.startActivityWithSlideInAnimation(intent: Intent) {
     startActivity(intent.withSlideInAnimation())

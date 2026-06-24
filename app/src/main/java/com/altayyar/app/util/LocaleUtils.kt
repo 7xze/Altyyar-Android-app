@@ -18,7 +18,7 @@ package com.altayyar.app.util
 import android.util.Log
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
-import com.altayyar.app.db.entity.AccountEntity
+import com.altayyar.app.data.local.entity.AccountEntity
 import java.util.Locale
 
 private const val TAG: String = "LocaleUtils"

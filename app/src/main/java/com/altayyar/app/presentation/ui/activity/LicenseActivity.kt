@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat.Type.systemBars
 import androidx.core.view.updatePadding
+import com.altayyar.app.R
 import com.altayyar.app.databinding.ActivityLicenseBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -21,15 +22,14 @@ class LicenseActivity : BaseActivity() {
             setDisplayShowHomeEnabled(true)
         }
 
-        setTitle(R.string.about_usage_policy_title)
+        setTitle(R.string.about_title_activity)
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.scrollView) { scrollView, insets ->
             val systemBarInsets = insets.getInsets(systemBars())
             scrollView.updatePadding(bottom = systemBarInsets.bottom)
-
             insets.inset(0, 0, 0, systemBarInsets.bottom)
         }
 
-        binding.usagePolicyTextView.text = getString(R.string.about_usage_policy)
+        binding.licenseApacheTextView.text = getString(R.string.license_apache_2)
     }
 }

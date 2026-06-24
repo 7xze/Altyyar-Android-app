@@ -45,6 +45,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.shareIn
 import kotlinx.coroutines.launch
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
@@ -85,7 +86,7 @@ class EditProfileViewModel @Inject constructor(
     private val _saveData = MutableStateFlow(null as Resource<Nothing>?)
     val saveData: StateFlow<Resource<Nothing>?> = _saveData.asStateFlow()
 
-    val instanceData: Flow<InstanceInfo> = instanceInfoRepo::getUpdatedInstanceInfoOrFallback.asFlow()
+    val instanceData: Flow<InstanceInfo> = flow<InstanceInfo> { emit(instanceInfoRepo.getUpdatedInstanceInfoOrFallback()) }
         .shareIn(viewModelScope, SharingStarted.Eagerly, replay = 1)
 
     private val _isChanged = MutableStateFlow(false)

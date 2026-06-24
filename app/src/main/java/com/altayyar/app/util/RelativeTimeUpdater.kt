@@ -8,8 +8,8 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.coroutineScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.RecyclerView
-import com.altayyar.app.adapter.StatusBaseViewHolder
-import com.altayyar.app.settings.PrefKeys
+import com.altayyar.app.presentation.ui.adapter.StatusBaseViewHolder
+import com.altayyar.app.data.local.PrefKeys
 import kotlin.time.Duration.Companion.minutes
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch

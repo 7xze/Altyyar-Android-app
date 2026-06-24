@@ -22,8 +22,8 @@ import androidx.core.view.size
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
 import com.google.android.material.chip.Chip
-import com.altayyar.app.HASHTAG
-import com.altayyar.app.LIST
+import com.altayyar.app.presentation.state.HASHTAG
+import com.altayyar.app.presentation.state.LIST
 import com.altayyar.app.R
 import com.altayyar.app.presentation.state.TabData
 import com.altayyar.app.databinding.ItemTabPreferenceBinding

@@ -23,7 +23,7 @@ import androidx.room.TypeConverters
 import com.altayyar.app.presentation.state.TabData
 import com.altayyar.app.presentation.ui.feature.systemnotifications.NotificationChannelData
 import com.altayyar.app.data.local.Converters
-import com.altayyar.app.defaultTabs
+import com.altayyar.app.presentation.state.defaultTabs
 import com.altayyar.app.entity.Emoji
 import com.altayyar.app.entity.Status
 import com.altayyar.app.data.local.DefaultReplyVisibility

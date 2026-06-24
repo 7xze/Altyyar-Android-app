@@ -136,7 +136,7 @@
         app:layout_constraintTop_toBottomOf="@id/status_translation_status"
         tools:visibility="visible" />
 
-    <com.altayyar.app.view.ClickableSpanTextView
+    <com.altayyar.app.presentation.ui.view.ClickableSpanTextView
         android:id="@+id/status_content_warning_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -176,7 +176,7 @@
         tools:text="@string/post_content_warning_show_more"
         tools:visibility="visible" />
 
-    <com.altayyar.app.view.ClickableSpanTextView
+    <com.altayyar.app.presentation.ui.view.ClickableSpanTextView
         android:id="@+id/status_content"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -309,7 +309,7 @@
         app:layout_constraintTop_toBottomOf="@id/status_poll_button_container"
         tools:text="7 votes • 7 hours remaining" />
 
-    <com.altayyar.app.view.ClickableSpanTextView
+    <com.altayyar.app.presentation.ui.view.ClickableSpanTextView
         android:id="@+id/status_trailing_hashtags_content"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

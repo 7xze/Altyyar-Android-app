@@ -22,6 +22,7 @@ import com.altayyar.app.R
 import com.altayyar.app.presentation.ui.activity.StatusListActivity
 import com.altayyar.app.presentation.ui.feature.account.AccountActivity
 import com.altayyar.app.presentation.ui.feature.search.SearchViewModel
+import com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
 import com.altayyar.app.databinding.FragmentSearchBinding
 import com.altayyar.app.domain.repository.LinkListener
 import com.altayyar.app.data.remote.MastodonApi

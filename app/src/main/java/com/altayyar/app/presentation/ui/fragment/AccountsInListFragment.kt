@@ -29,6 +29,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
+import com.altayyar.app.R
 import com.altayyar.app.databinding.FragmentAccountsInListBinding
 import com.altayyar.app.databinding.ItemFollowRequestBinding
 import com.altayyar.app.entity.TimelineAccount
@@ -42,6 +43,7 @@ import com.altayyar.app.util.unsafeLazy
 import com.altayyar.app.util.visible
 import com.altayyar.app.presentation.viewmodel.AccountsInListViewModel
 import com.altayyar.app.presentation.viewmodel.State
+import com.altayyar.app.presentation.ui.view.BackgroundMessageView
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 import kotlinx.coroutines.launch

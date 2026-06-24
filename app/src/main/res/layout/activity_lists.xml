@@ -13,7 +13,7 @@
             android:id="@+id/includedToolbar"
             layout="@layout/toolbar_basic" />
 
-        <com.altayyar.app.view.TayyarSwipeRefreshLayout
+        <com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -33,14 +33,14 @@
                     android:clipToPadding="false"
                     android:paddingBottom="@dimen/recyclerview_bottom_padding_actionbutton" />
 
-                <com.altayyar.app.view.BackgroundMessageView
+                <com.altayyar.app.presentation.ui.view.BackgroundMessageView
                     android:id="@+id/messageView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:visibility="gone"
                     tools:visibility="visible" />
             </FrameLayout>
-        </com.altayyar.app.view.TayyarSwipeRefreshLayout>
+        </com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout>
 
         <com.google.android.material.progressindicator.CircularProgressIndicator
             android:id="@+id/progressBar"

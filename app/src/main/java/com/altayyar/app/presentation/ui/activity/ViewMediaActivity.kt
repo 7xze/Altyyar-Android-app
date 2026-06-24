@@ -45,6 +45,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import androidx.viewpager2.widget.ViewPager2
 import com.bumptech.glide.Glide
 import com.google.android.material.snackbar.Snackbar
+import com.altayyar.app.R
 import com.altayyar.app.BuildConfig.APPLICATION_ID
 import com.altayyar.app.presentation.ui.feature.viewthread.ViewThreadActivity
 import com.altayyar.app.databinding.ActivityViewMediaBinding

@@ -1002,4 +1002,50 @@
 
     <string name="reblog_confirm">إعادة نشر هذا المنشور؟</string>
     <string name="favourite_confirm">إضافة هذا المنشور إلى المفضلة؟</string>
+
+    <!-- Marketplace -->
+    <string name="marketplace_title">السوق</string>
+    <string name="marketplace_browse">تصفح الخدمات</string>
+    <string name="marketplace_all">الكل</string>
+    <string name="marketplace_design">تصميم</string>
+    <string name="marketplace_photography">تصوير</string>
+    <string name="marketplace_editing">تعديل</string>
+    <string name="marketplace_search_hint">ابحث عن خدمة…</string>
+    <string name="marketplace_no_services">لا توجد خدمات حالياً</string>
+    <string name="marketplace_my_orders">طلباتي</string>
+    <string name="marketplace_seller_dashboard">لوحة البائع</string>
+    <string name="marketplace_add_to_cart">أضف إلى السلة</string>
+    <string name="marketplace_buy_now">اشتر الآن</string>
+    <string name="marketplace_price">%s ر.س</string>
+    <string name="marketplace_service_details">تفاصيل الخدمة</string>
+    <string name="marketplace_seller_section">مقدم الخدمة</string>
+    <string name="marketplace_quantity">الكمية</string>
+    <string name="marketplace_total">الإجمالي</string>
+    <string name="marketplace_cart_title">سلة التسوق</string>
+    <string name="marketplace_cart_empty">السلة فارغة</string>
+    <string name="marketplace_checkout">تأكيد الطلب</string>
+    <string name="marketplace_order_created">تم إنشاء الطلب بنجاح</string>
+    <string name="marketplace_order_id">رقم الطلب: %s</string>
+    <string name="marketplace_order_status">الحالة</string>
+    <string name="marketplace_order_date">التاريخ: %s</string>
+    <string name="marketplace_no_orders">لا توجد طلبات</string>
+    <string name="marketplace_my_services">خدماتي</string>
+    <string name="marketplace_add_service">إضافة خدمة</string>
+    <string name="marketplace_edit_service">تعديل الخدمة</string>
+    <string name="marketplace_delete_service">حذف الخدمة</string>
+    <string name="marketplace_delete_confirm">هل أنت متأكد من حذف هذه الخدمة؟</string>
+    <string name="marketplace_service_title_hint">عنوان الخدمة</string>
+    <string name="marketplace_service_desc_hint">وصف الخدمة</string>
+    <string name="marketplace_service_price_hint">السعر (ر.س)</string>
+    <string name="marketplace_service_category_hint">التصنيف</string>
+    <string name="marketplace_save">حفظ</string>
+    <string name="marketplace_cancel">إلغاء</string>
+    <string name="marketplace_no_services_seller">لم تضف أي خدمات بعد</string>
+    <string name="marketplace_service_added">تمت إضافة الخدمة بنجاح</string>
+    <string name="marketplace_service_updated">تم تحديث الخدمة بنجاح</string>
+    <string name="marketplace_service_deleted">تم حذف الخدمة بنجاح</string>
+    <string name="marketplace_added_to_cart">أضيفت الخدمة إلى السلة</string>
+    <string name="marketplace_remove">إزالة</string>
+    <string name="marketplace_one_item">خدمة واحدة</string>
+    <string name="marketplace_items_count">%d خدمات</string>
 </resources>

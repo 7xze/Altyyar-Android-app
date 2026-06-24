@@ -5,6 +5,7 @@ import androidx.paging.LoadType
 import androidx.paging.PagingState
 import androidx.paging.RemoteMediator
 import com.altayyar.app.data.remote.MastodonApi
+import com.altayyar.app.data.repository.DomainBlocksRepository
 import com.altayyar.app.util.HttpHeaderLink
 import retrofit2.HttpException
 import retrofit2.Response

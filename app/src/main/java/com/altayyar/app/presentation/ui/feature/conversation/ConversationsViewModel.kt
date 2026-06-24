@@ -27,7 +27,9 @@ import at.connyduck.calladapter.networkresult.fold
 import com.altayyar.app.data.local.AccountManager
 import com.altayyar.app.data.local.AppDatabase
 import com.altayyar.app.data.remote.MastodonApi
+import com.altayyar.app.data.local.entity.ConversationEntity
 import com.altayyar.app.domain.usecase.TimelineCases
+import com.altayyar.app.presentation.state.ConversationViewData
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 import kotlinx.coroutines.flow.map

@@ -12,6 +12,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.android.material.snackbar.Snackbar
 import com.altayyar.app.R
 import com.altayyar.app.databinding.FragmentDomainBlocksBinding
+import com.altayyar.app.presentation.ui.view.BackgroundMessageView
+import com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
 import com.altayyar.app.util.ensureBottomPadding
 import com.altayyar.app.util.hide
 import com.altayyar.app.util.show

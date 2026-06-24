@@ -50,6 +50,7 @@ import com.altayyar.app.util.unicodeWrap
 import com.altayyar.app.util.visible
 import com.altayyar.app.presentation.state.NotificationViewData
 import com.altayyar.app.presentation.state.StatusViewData
+import com.altayyar.app.presentation.ui.view.ClickableSpanTextView
 import java.util.Date
 
 internal class StatusNotificationViewHolder(

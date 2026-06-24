@@ -2,7 +2,7 @@ package com.altayyar.app.presentation.ui.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import com.altayyar.app.ViewMediaAdapter
+import com.altayyar.app.presentation.ui.activity.ViewMediaAdapter
 import com.altayyar.app.presentation.ui.fragment.ViewMediaFragment
 
 class SingleImagePagerAdapter(

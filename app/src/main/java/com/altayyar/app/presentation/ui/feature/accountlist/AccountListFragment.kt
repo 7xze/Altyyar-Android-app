@@ -30,7 +30,7 @@ import androidx.recyclerview.widget.SimpleItemAnimator
 import com.google.android.material.snackbar.BaseTransientBottomBar
 import com.google.android.material.snackbar.Snackbar
 import com.altayyar.app.presentation.ui.activity.BottomSheetActivity
-import com.altayyar.app.PostLookupFallbackBehavior
+import com.altayyar.app.presentation.ui.activity.PostLookupFallbackBehavior
 import com.altayyar.app.R
 import com.altayyar.app.presentation.ui.activity.StatusListActivity
 import com.altayyar.app.presentation.ui.adapter.LoadStateFooterAdapter
@@ -53,6 +53,7 @@ import com.altayyar.app.util.show
 import com.altayyar.app.util.startActivityWithSlideInAnimation
 import com.altayyar.app.util.viewBinding
 import com.altayyar.app.util.visible
+import com.altayyar.app.presentation.ui.feature.accountlist.AccountListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import dagger.hilt.android.lifecycle.withCreationCallback
 import javax.inject.Inject

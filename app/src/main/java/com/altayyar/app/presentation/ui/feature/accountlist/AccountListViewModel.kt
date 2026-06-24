@@ -28,6 +28,7 @@ import at.connyduck.calladapter.networkresult.fold
 import at.connyduck.calladapter.networkresult.onFailure
 import com.altayyar.app.R
 import com.altayyar.app.data.remote.MastodonApi
+import com.altayyar.app.presentation.state.AccountViewData
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject

@@ -24,6 +24,7 @@ import com.squareup.moshi.JsonWriter
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types
 import java.lang.reflect.Type
+import com.altayyar.app.json.Guarded
 
 /**
  * This adapter tries to parse the value using a delegated parser

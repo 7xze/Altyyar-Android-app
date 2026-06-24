@@ -35,6 +35,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.ListAdapter
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
+import com.altayyar.app.R
 import com.altayyar.app.databinding.ActivityListsBinding
 import com.altayyar.app.databinding.DialogListBinding
 import com.altayyar.app.databinding.ItemListBinding
@@ -47,6 +48,7 @@ import com.altayyar.app.util.show
 import com.altayyar.app.util.startActivityWithSlideInAnimation
 import com.altayyar.app.util.viewBinding
 import com.altayyar.app.util.visible
+import com.altayyar.app.presentation.ui.fragment.AccountsInListFragment
 import com.altayyar.app.presentation.viewmodel.ListsViewModel
 import com.altayyar.app.presentation.viewmodel.ListsViewModel.Event
 import com.altayyar.app.presentation.viewmodel.ListsViewModel.LoadingState.ERROR_NETWORK

@@ -6,6 +6,8 @@ import androidx.paging.PagingState
 import androidx.paging.RemoteMediator
 import androidx.room.withTransaction
 import com.altayyar.app.data.local.AppDatabase
+import com.altayyar.app.data.local.entity.ConversationEntity
+import com.altayyar.app.data.local.entity.toEntity
 import com.altayyar.app.data.remote.MastodonApi
 import com.altayyar.app.util.HttpHeaderLink
 import retrofit2.HttpException

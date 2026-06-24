@@ -15,6 +15,10 @@
 
 package com.altayyar.app.presentation.state
 
+import com.altayyar.app.data.local.entity.ConversationAccountEntity
+import com.altayyar.app.data.local.entity.ConversationEntity
+import com.altayyar.app.data.local.entity.ConversationStatusEntity
+import com.altayyar.app.data.local.entity.toEntity
 import com.altayyar.app.entity.Poll
 import com.altayyar.app.presentation.state.StatusViewData
 

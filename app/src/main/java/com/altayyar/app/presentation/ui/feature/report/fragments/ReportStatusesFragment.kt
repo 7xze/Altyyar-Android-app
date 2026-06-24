@@ -42,6 +42,7 @@ import com.altayyar.app.presentation.ui.feature.report.ReportViewModel
 import com.altayyar.app.presentation.ui.feature.report.Screen
 import com.altayyar.app.presentation.ui.feature.report.adapter.AdapterHandler
 import com.altayyar.app.presentation.ui.feature.report.adapter.StatusesAdapter
+import com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
 import com.altayyar.app.databinding.FragmentReportStatusesBinding
 import com.altayyar.app.data.local.AccountManager
 import com.altayyar.app.entity.Attachment

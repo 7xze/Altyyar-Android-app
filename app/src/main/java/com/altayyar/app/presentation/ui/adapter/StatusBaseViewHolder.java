@@ -1,6 +1,6 @@
 package com.altayyar.app.presentation.ui.adapter;
 
-import static com.altayyar.app.viewdata.PollViewDataKt.buildDescription;
+import static com.altayyar.app.presentation.state.PollViewDataKt.buildDescription;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -68,13 +68,13 @@ import com.altayyar.app.util.NumberUtils;
 import com.altayyar.app.util.StatusDisplayOptions;
 import com.altayyar.app.util.TimestampUtils;
 import com.altayyar.app.util.TouchDelegateHelper;
-import com.altayyar.app.view.MediaPreviewImageView;
-import com.altayyar.app.view.MediaPreviewLayout;
-import com.altayyar.app.viewdata.PollOptionViewData;
-import com.altayyar.app.viewdata.PollViewData;
-import com.altayyar.app.viewdata.PollViewDataKt;
-import com.altayyar.app.viewdata.StatusViewData;
-import com.altayyar.app.viewdata.TranslationViewData;
+import com.altayyar.app.presentation.ui.view.MediaPreviewImageView;
+import com.altayyar.app.presentation.ui.view.MediaPreviewLayout;
+import com.altayyar.app.presentation.state.PollOptionViewData;
+import com.altayyar.app.presentation.state.PollViewData;
+import com.altayyar.app.presentation.state.PollViewDataKt;
+import com.altayyar.app.presentation.state.StatusViewData;
+import com.altayyar.app.presentation.state.TranslationViewData;
 
 import java.text.NumberFormat;
 import java.util.Collections;

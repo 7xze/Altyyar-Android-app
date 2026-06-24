@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <com.altayyar.app.components.compose.view.FocusIndicatorView
+        <com.altayyar.app.presentation.ui.feature.compose.view.FocusIndicatorView
             android:id="@+id/focusIndicator"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

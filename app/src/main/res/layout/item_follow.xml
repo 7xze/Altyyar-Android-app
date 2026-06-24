@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@id/notificationDisplayName"
         tools:text="\@username" />
 
-    <com.altayyar.app.view.ClickableSpanTextView
+    <com.altayyar.app.presentation.ui.view.ClickableSpanTextView
         android:id="@+id/accountNote"
         android:layout_width="0dp"
         android:layout_height="wrap_content"

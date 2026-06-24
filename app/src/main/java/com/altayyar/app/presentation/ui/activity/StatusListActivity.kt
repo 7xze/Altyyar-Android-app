@@ -25,6 +25,7 @@ import androidx.fragment.app.commit
 import androidx.lifecycle.lifecycleScope
 import at.connyduck.calladapter.networkresult.fold
 import com.google.android.material.snackbar.Snackbar
+import com.altayyar.app.R
 import com.altayyar.app.presentation.EventHub
 import com.altayyar.app.presentation.FilterUpdatedEvent
 import com.altayyar.app.presentation.ui.feature.filters.EditFilterActivity

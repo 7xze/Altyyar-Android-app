@@ -26,6 +26,7 @@ import com.altayyar.app.domain.repository.StatusActionListener
 import com.altayyar.app.util.StatusDisplayOptions
 import com.altayyar.app.util.show
 import com.altayyar.app.presentation.state.NotificationViewData
+import com.altayyar.app.presentation.state.StatusViewData.Concrete
 
 internal class StatusViewHolder(
     itemView: View,

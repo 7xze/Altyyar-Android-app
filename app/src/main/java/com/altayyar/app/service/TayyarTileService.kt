@@ -20,8 +20,8 @@ import android.app.PendingIntent
 import android.content.Intent
 import android.os.Build
 import android.service.quicksettings.TileService
-import com.altayyar.app.MainActivity
-import com.altayyar.app.components.compose.ComposeActivity
+import com.altayyar.app.presentation.ui.activity.MainActivity
+import com.altayyar.app.presentation.ui.feature.compose.ComposeActivity
 
 /**
  * Small Addition that adds in a QuickSettings tile

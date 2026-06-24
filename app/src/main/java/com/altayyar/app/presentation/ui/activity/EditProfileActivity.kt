@@ -46,6 +46,7 @@ import com.canhub.cropper.CropImageContract
 import com.canhub.cropper.options
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
+import com.altayyar.app.R
 import com.altayyar.app.presentation.ui.adapter.AccountFieldEditAdapter
 import com.altayyar.app.data.repository.InstanceInfoRepository
 import com.altayyar.app.databinding.ActivityEditProfileBinding

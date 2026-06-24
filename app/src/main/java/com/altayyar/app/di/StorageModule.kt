@@ -19,8 +19,8 @@ import android.content.Context
 import android.content.SharedPreferences
 import androidx.preference.PreferenceManager
 import androidx.room.Room
-import com.altayyar.app.db.AppDatabase
-import com.altayyar.app.db.Converters
+import com.altayyar.app.data.local.AppDatabase
+import com.altayyar.app.data.local.Converters
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

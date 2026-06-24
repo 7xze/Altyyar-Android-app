@@ -28,6 +28,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.StyleRes
 import androidx.appcompat.app.AppCompatActivity
+import com.altayyar.app.R
 import androidx.core.graphics.Insets
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat

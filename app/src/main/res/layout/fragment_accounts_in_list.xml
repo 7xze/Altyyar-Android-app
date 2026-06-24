@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/searchView" />
 
-    <com.altayyar.app.view.BackgroundMessageView
+    <com.altayyar.app.presentation.ui.view.BackgroundMessageView
         android:id="@+id/messageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

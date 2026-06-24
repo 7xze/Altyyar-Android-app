@@ -163,7 +163,7 @@
 
             </LinearLayout>
 
-            <com.altayyar.app.components.compose.view.EditTextTyped
+            <com.altayyar.app.presentation.ui.feature.compose.view.EditTextTyped
                 android:id="@+id/composeEditField"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -188,7 +188,7 @@
                 android:scrollbars="none"
                 android:visibility="gone" />
 
-            <com.altayyar.app.components.compose.view.PollPreviewView
+            <com.altayyar.app.presentation.ui.feature.compose.view.PollPreviewView
                 android:id="@+id/pollPreview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -250,7 +250,7 @@
 
     </LinearLayout>
 
-    <com.altayyar.app.view.EmojiPicker
+    <com.altayyar.app.presentation.ui.view.EmojiPicker
         android:id="@+id/emojiView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -264,7 +264,7 @@
         app:behavior_peekHeight="0dp"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
 
-    <com.altayyar.app.components.compose.view.ComposeOptionsView
+    <com.altayyar.app.presentation.ui.feature.compose.view.ComposeOptionsView
         android:id="@+id/composeOptionsBottomSheet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -278,7 +278,7 @@
         app:behavior_peekHeight="0dp"
         app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior" />
 
-    <com.altayyar.app.components.compose.view.ComposeScheduleView
+    <com.altayyar.app.presentation.ui.feature.compose.view.ComposeScheduleView
         android:id="@+id/composeScheduleView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -385,7 +385,7 @@
             android:textStyle="bold"
             tools:text="500" />
 
-        <com.altayyar.app.components.compose.view.TootButton
+        <com.altayyar.app.presentation.ui.feature.compose.view.TootButton
             android:id="@+id/composeTootButton"
             style="@style/TayyarButton"
             android:layout_width="@dimen/toot_button_width"

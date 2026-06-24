@@ -33,6 +33,7 @@ import com.altayyar.app.entity.Filter
 import com.altayyar.app.domain.repository.StatusActionListener
 import com.altayyar.app.util.StatusDisplayOptions
 import com.altayyar.app.presentation.state.StatusViewData
+import com.altayyar.app.presentation.state.StatusViewData.Concrete
 
 class TimelinePagingAdapter(
     private var statusDisplayOptions: StatusDisplayOptions,

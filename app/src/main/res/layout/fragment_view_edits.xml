@@ -72,7 +72,7 @@
                 tools:text="\@Entenhausen@birbsarecooooooooooool.site" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <com.altayyar.app.view.TayyarSwipeRefreshLayout
+        <com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -91,7 +91,7 @@
                 android:paddingBottom="@dimen/recyclerview_bottom_padding_no_actionbutton"
                 android:scrollbarStyle="outsideInset"
                 android:scrollbars="vertical" />
-        </com.altayyar.app.view.TayyarSwipeRefreshLayout>
+        </com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout>
     </LinearLayout>
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
@@ -103,13 +103,13 @@
         android:indeterminate="true"
         android:visibility="gone" />
 
-    <com.altayyar.app.view.BackgroundMessageView
+    <com.altayyar.app.presentation.ui.view.BackgroundMessageView
         android:id="@+id/statusView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="gone">
 
-    </com.altayyar.app.view.BackgroundMessageView>
+    </com.altayyar.app.presentation.ui.view.BackgroundMessageView>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

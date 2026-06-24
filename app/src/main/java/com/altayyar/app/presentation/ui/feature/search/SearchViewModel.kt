@@ -32,6 +32,7 @@ import com.altayyar.app.data.local.entity.AccountEntity
 import com.altayyar.app.entity.DeletedStatus
 import com.altayyar.app.entity.Filter
 import com.altayyar.app.entity.Status
+import com.altayyar.app.data.remote.InstanceInfo
 import com.altayyar.app.data.remote.MastodonApi
 import com.altayyar.app.domain.usecase.TimelineCases
 import com.altayyar.app.util.toViewData

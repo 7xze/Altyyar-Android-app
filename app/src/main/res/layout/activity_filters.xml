@@ -10,7 +10,7 @@
         android:id="@+id/includedToolbar"
         layout="@layout/toolbar_basic" />
 
-    <com.altayyar.app.view.TayyarSwipeRefreshLayout
+    <com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -30,13 +30,13 @@
                 android:scrollbars="vertical"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
-            <com.altayyar.app.view.BackgroundMessageView
+            <com.altayyar.app.presentation.ui.view.BackgroundMessageView
                 android:id="@+id/messageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center" />
         </FrameLayout>
-    </com.altayyar.app.view.TayyarSwipeRefreshLayout>
+    </com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout>
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/progressBar"

@@ -36,6 +36,7 @@ import com.altayyar.app.presentation.ui.activity.BaseActivity
 import com.altayyar.app.R
 import com.altayyar.app.presentation.ui.feature.notifications.requests.details.NotificationRequestDetailsActivity
 import com.altayyar.app.presentation.ui.feature.preference.notificationpolicies.NotificationPoliciesActivity
+import com.altayyar.app.presentation.ui.view.BackgroundMessageView
 import com.altayyar.app.databinding.ActivityNotificationRequestsBinding
 import com.altayyar.app.entity.Emoji
 import com.altayyar.app.entity.NotificationRequest

@@ -26,6 +26,7 @@ import com.altayyar.app.presentation.ui.activity.BaseActivity
 import com.altayyar.app.R
 import com.altayyar.app.databinding.ActivityNotificationPolicyBinding
 import com.altayyar.app.domain.usecase.NotificationPolicyState
+import com.altayyar.app.presentation.ui.view.BackgroundMessageView
 import com.altayyar.app.util.getErrorString
 import com.altayyar.app.util.viewBinding
 import com.altayyar.app.util.visible

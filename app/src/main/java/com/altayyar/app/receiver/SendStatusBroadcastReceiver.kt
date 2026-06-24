@@ -24,9 +24,9 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.core.app.RemoteInput
 import com.altayyar.app.R
-import com.altayyar.app.components.systemnotifications.NotificationChannelData
-import com.altayyar.app.components.systemnotifications.NotificationService
-import com.altayyar.app.db.AccountManager
+import com.altayyar.app.presentation.ui.feature.systemnotifications.NotificationChannelData
+import com.altayyar.app.presentation.ui.feature.systemnotifications.NotificationService
+import com.altayyar.app.data.local.AccountManager
 import com.altayyar.app.entity.Status
 import com.altayyar.app.service.SendStatusService
 import com.altayyar.app.service.StatusToSend

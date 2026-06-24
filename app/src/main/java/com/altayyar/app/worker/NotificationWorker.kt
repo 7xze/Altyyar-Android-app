@@ -24,8 +24,8 @@ import androidx.work.CoroutineWorker
 import androidx.work.ForegroundInfo
 import androidx.work.WorkerParameters
 import com.altayyar.app.R
-import com.altayyar.app.components.systemnotifications.NotificationFetcher
-import com.altayyar.app.components.systemnotifications.NotificationService
+import com.altayyar.app.presentation.ui.feature.systemnotifications.NotificationFetcher
+import com.altayyar.app.presentation.ui.feature.systemnotifications.NotificationService
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
 

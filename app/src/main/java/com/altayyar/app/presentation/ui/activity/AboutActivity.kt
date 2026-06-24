@@ -7,6 +7,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat.Type.systemBars
 import androidx.core.view.updatePadding
 import androidx.lifecycle.lifecycleScope
+import com.altayyar.app.BuildConfig
+import com.altayyar.app.R
 import com.altayyar.app.data.repository.InstanceInfoRepository
 import com.altayyar.app.databinding.ActivityAboutBinding
 import com.altayyar.app.util.copyToClipboard

@@ -4,7 +4,7 @@
     android:layout_width="@dimen/timeline_width"
     android:layout_height="match_parent">
 
-    <com.altayyar.app.view.TayyarSwipeRefreshLayout
+    <com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -19,7 +19,7 @@
             android:paddingBottom="@dimen/recyclerview_bottom_padding_no_actionbutton"
             tools:listitem="@layout/item_account" />
 
-    </com.altayyar.app.view.TayyarSwipeRefreshLayout>
+    </com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout>
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/searchProgressBar"

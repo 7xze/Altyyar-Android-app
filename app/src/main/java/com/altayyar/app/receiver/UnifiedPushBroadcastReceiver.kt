@@ -17,10 +17,10 @@ package com.altayyar.app.receiver
 
 import android.content.Context
 import android.util.Log
-import com.altayyar.app.components.systemnotifications.NotificationService
-import com.altayyar.app.db.AccountManager
+import com.altayyar.app.presentation.ui.feature.systemnotifications.NotificationService
+import com.altayyar.app.data.local.AccountManager
 import com.altayyar.app.di.ApplicationScope
-import com.altayyar.app.network.MastodonApi
+import com.altayyar.app.data.remote.MastodonApi
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope

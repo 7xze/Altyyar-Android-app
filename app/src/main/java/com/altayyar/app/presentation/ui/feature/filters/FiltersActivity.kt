@@ -11,6 +11,8 @@ import com.altayyar.app.presentation.ui.activity.BaseActivity
 import com.altayyar.app.R
 import com.altayyar.app.databinding.ActivityFiltersBinding
 import com.altayyar.app.entity.Filter
+import com.altayyar.app.presentation.ui.view.BackgroundMessageView
+import com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
 import com.altayyar.app.util.ensureBottomMargin
 import com.altayyar.app.util.ensureBottomPadding
 import com.altayyar.app.util.hide

@@ -31,6 +31,7 @@ import com.altayyar.app.util.show
 import com.altayyar.app.util.unicodeWrap
 import com.altayyar.app.util.visible
 import com.altayyar.app.presentation.state.NotificationViewData
+import com.altayyar.app.presentation.ui.view.ClickableSpanTextView
 
 class FollowViewHolder(
     private val binding: ItemFollowBinding,

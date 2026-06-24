@@ -8,6 +8,8 @@ import androidx.paging.cachedIn
 import at.connyduck.calladapter.networkresult.fold
 import at.connyduck.calladapter.networkresult.onFailure
 import com.altayyar.app.R
+import com.altayyar.app.data.remote.GuardedAdapter
+import com.altayyar.app.data.repository.DomainBlocksRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 import kotlinx.coroutines.flow.MutableSharedFlow

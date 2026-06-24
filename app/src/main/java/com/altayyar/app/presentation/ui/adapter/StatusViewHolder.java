@@ -35,7 +35,7 @@ import com.altayyar.app.util.NumberUtils;
 import com.altayyar.app.util.SmartLengthInputFilter;
 import com.altayyar.app.util.StatusDisplayOptions;
 import com.altayyar.app.util.StringUtils;
-import com.altayyar.app.viewdata.StatusViewData;
+import com.altayyar.app.presentation.state.StatusViewData;
 
 import java.util.Collections;
 import java.util.List;

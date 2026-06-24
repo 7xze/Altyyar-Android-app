@@ -23,7 +23,7 @@ import androidx.core.content.edit
 import androidx.core.os.LocaleListCompat
 import androidx.preference.PreferenceDataStore
 import com.altayyar.app.R
-import com.altayyar.app.settings.PrefKeys
+import com.altayyar.app.data.local.PrefKeys
 import dagger.hilt.android.qualifiers.ApplicationContext
 import javax.inject.Inject
 import javax.inject.Singleton

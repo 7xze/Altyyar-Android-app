@@ -17,6 +17,7 @@ package com.altayyar.app.presentation.ui.feature.accountlist
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
+import com.altayyar.app.presentation.state.AccountViewData
 
 class AccountListPagingSource(
     private val accounts: List<AccountViewData>,

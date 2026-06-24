@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="?attr/windowBackgroundColor">
 
-    <com.altayyar.app.view.TayyarSwipeRefreshLayout
+    <com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
         android:id="@+id/swipeRefreshLayout"
         android:layout_width="640dp"
         android:layout_height="match_parent"
@@ -37,7 +37,7 @@
                 android:indeterminate="true"
                 android:visibility="gone" />
 
-            <com.altayyar.app.view.BackgroundMessageView
+            <com.altayyar.app.presentation.ui.view.BackgroundMessageView
                 android:id="@+id/statusView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -45,7 +45,7 @@
                 android:visibility="gone"
                 tools:visibility="visible" />
         </LinearLayout>
-    </com.altayyar.app.view.TayyarSwipeRefreshLayout>
+    </com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout>
 
     <com.google.android.material.progressindicator.CircularProgressIndicator
         android:id="@+id/initialProgressBar"

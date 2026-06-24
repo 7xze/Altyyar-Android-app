@@ -4,7 +4,7 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <com.altayyar.app.components.account.media.SquareImageView
+    <com.altayyar.app.presentation.ui.feature.account.media.SquareImageView
         android:id="@+id/accountMediaImageView"
         android:layout_width="match_parent"
         android:layout_height="0dp"

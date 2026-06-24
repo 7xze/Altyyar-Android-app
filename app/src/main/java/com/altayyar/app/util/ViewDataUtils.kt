@@ -39,9 +39,9 @@ import androidx.paging.LoadState
 import com.altayyar.app.entity.Filter
 import com.altayyar.app.entity.Status
 import com.altayyar.app.entity.TrendingTag
-import com.altayyar.app.viewdata.StatusViewData
-import com.altayyar.app.viewdata.TranslationViewData
-import com.altayyar.app.viewdata.TrendingViewData
+import com.altayyar.app.presentation.state.StatusViewData
+import com.altayyar.app.presentation.state.TranslationViewData
+import com.altayyar.app.presentation.state.TrendingViewData
 
 fun Status.toViewData(
     isShowingContent: Boolean,

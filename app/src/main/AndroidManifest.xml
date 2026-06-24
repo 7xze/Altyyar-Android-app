@@ -23,7 +23,7 @@
         android:networkSecurityConfig="@xml/network_security_config">
 
         <activity
-            android:name=".components.login.LoginActivity"
+            android:name=".presentation.ui.feature.login.LoginActivity"
             android:windowSoftInputMode="adjustResize"
             android:exported="true">
             <intent-filter>
@@ -37,9 +37,9 @@
                     android:scheme="@string/oauth_scheme" />
             </intent-filter>
         </activity>
-        <activity android:name=".components.login.LoginWebViewActivity" />
+        <activity android:name=".presentation.ui.feature.login.LoginWebViewActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".presentation.ui.activity.MainActivity"
             android:exported="true"
             android:alwaysRetainTaskState="true"
             android:maxRecents="1"
@@ -105,28 +105,28 @@
              so it must be excluded from recents or the sharing process can be restarted from recents
              which would be very unexpected -->
         <activity
-            android:name=".components.compose.ComposeActivity"
+            android:name=".presentation.ui.feature.compose.ComposeActivity"
             android:theme="@style/TayyarDialogActivityTheme"
             android:alwaysRetainTaskState="true" />
         <activity
-            android:name=".components.viewthread.ViewThreadActivity"
+            android:name=".presentation.ui.feature.viewthread.ViewThreadActivity"
             android:configChanges="orientation|screenSize" />
         <activity
-            android:name=".ViewMediaActivity"
+            android:name=".presentation.ui.activity.ViewMediaActivity"
             android:theme="@style/TayyarBaseTheme"
             android:configChanges="orientation|screenSize|keyboardHidden|screenLayout|smallestScreenSize" />
-        <activity android:name=".components.account.AccountActivity" />
-        <activity android:name=".EditProfileActivity"/>
-        <activity android:name=".components.preference.PreferencesActivity" />
-        <activity android:name=".StatusListActivity" />
-        <activity android:name=".components.accountlist.AccountListActivity" />
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".TabPreferenceActivity" />
+        <activity android:name=".presentation.ui.feature.account.AccountActivity" />
+        <activity android:name=".presentation.ui.activity.EditProfileActivity"/>
+        <activity android:name=".presentation.ui.feature.preference.PreferencesActivity" />
+        <activity android:name=".presentation.ui.activity.StatusListActivity" />
+        <activity android:name=".presentation.ui.feature.accountlist.AccountListActivity" />
+        <activity android:name=".presentation.ui.activity.AboutActivity" />
+        <activity android:name=".presentation.ui.activity.TabPreferenceActivity" />
         <activity
             android:name="com.canhub.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
         <activity
-            android:name=".components.search.SearchActivity"
+            android:name=".presentation.ui.feature.search.SearchActivity"
             android:launchMode="singleTask"
             android:exported="false">
             <intent-filter>
@@ -137,23 +137,30 @@
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
         </activity>
-        <activity android:name=".ListsActivity" />
-        <activity android:name=".LicenseActivity" />
-        <activity android:name=".components.filters.FiltersActivity" />
-        <activity android:name=".components.trending.TrendingActivity" />
-        <activity android:name=".components.followedtags.FollowedTagsActivity" />
+        <activity android:name=".presentation.ui.activity.ListsActivity" />
+        <activity android:name=".presentation.ui.activity.LicenseActivity" />
+        <activity android:name=".presentation.ui.feature.filters.FiltersActivity" />
+        <activity android:name=".presentation.ui.feature.followedtags.FollowedTagsActivity" />
         <activity
-            android:name=".components.report.ReportActivity"
+            android:name=".presentation.ui.feature.report.ReportActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
-        <activity android:name=".components.domainblocks.DomainBlocksActivity" />
-        <activity android:name=".components.scheduled.ScheduledStatusActivity" />
-        <activity android:name=".components.announcements.AnnouncementsActivity" />
-        <activity android:name=".components.drafts.DraftsActivity" />
-        <activity android:name="com.altayyar.app.components.filters.EditFilterActivity"
+        <activity android:name=".presentation.ui.feature.domainblocks.DomainBlocksActivity" />
+        <activity android:name=".presentation.ui.feature.scheduled.ScheduledStatusActivity" />
+        <activity android:name=".presentation.ui.feature.announcements.AnnouncementsActivity" />
+
+        <activity android:name=".presentation.ui.feature.filters.EditFilterActivity"
             android:windowSoftInputMode="adjustResize" />
-        <activity android:name=".components.preference.notificationpolicies.NotificationPoliciesActivity"/>
-        <activity android:name=".components.notifications.requests.NotificationRequestsActivity"/>
-        <activity android:name=".components.notifications.requests.details.NotificationRequestDetailsActivity"/>
+        <activity android:name=".presentation.ui.feature.preference.notificationpolicies.NotificationPoliciesActivity"/>
+        <activity android:name=".presentation.ui.feature.notifications.requests.NotificationRequestsActivity"/>
+        <activity android:name=".presentation.ui.feature.notifications.requests.details.NotificationRequestDetailsActivity"/>
+
+        <!-- Marketplace Activities -->
+        <activity android:name=".presentation.ui.feature.marketplace.MarketplaceHomeActivity" />
+        <activity android:name=".presentation.ui.feature.marketplace.ServiceDetailActivity" />
+        <activity android:name=".presentation.ui.feature.cart.CartActivity" />
+        <activity android:name=".presentation.ui.feature.orders.OrdersActivity" />
+        <activity android:name=".presentation.ui.feature.sellerdashboard.SellerDashboardActivity" />
+        <activity android:name=".presentation.ui.feature.sellerdashboard.AddServiceActivity" />
 
         <receiver
             android:name=".receiver.SendStatusBroadcastReceiver"

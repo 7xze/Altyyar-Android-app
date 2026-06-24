@@ -36,6 +36,8 @@ import com.altayyar.app.presentation.ui.activity.BottomSheetActivity
 import com.altayyar.app.R
 import com.altayyar.app.presentation.ui.activity.StatusListActivity
 import com.altayyar.app.presentation.ui.feature.account.AccountActivity
+import com.altayyar.app.presentation.ui.view.BackgroundMessageView
+import com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
 import com.altayyar.app.databinding.FragmentViewEditsBinding
 import com.altayyar.app.domain.repository.LinkListener
 import com.altayyar.app.data.local.PrefKeys

@@ -15,10 +15,10 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerViewAccessibilityDelegate
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.altayyar.app.R
-import com.altayyar.app.adapter.StatusBaseViewHolder
+import com.altayyar.app.presentation.ui.adapter.StatusBaseViewHolder
 import com.altayyar.app.entity.Status.Companion.MAX_MEDIA_ATTACHMENTS
-import com.altayyar.app.interfaces.StatusActionListener
-import com.altayyar.app.viewdata.StatusViewData
+import com.altayyar.app.domain.repository.StatusActionListener
+import com.altayyar.app.presentation.state.StatusViewData
 import kotlin.math.min
 
 // Not using lambdas because there's boxing of int then

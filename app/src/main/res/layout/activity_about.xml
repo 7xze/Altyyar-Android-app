@@ -126,7 +126,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:srcCompat="@drawable/ic_content_copy_24dp" />
 
-                <com.altayyar.app.view.ClickableSpanTextView
+                <com.altayyar.app.presentation.ui.view.ClickableSpanTextView
                     android:id="@+id/aboutLicenseInfoTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -140,7 +140,7 @@
                     app:layout_constraintTop_toBottomOf="@id/accountInfo"
                     tools:text="@string/about_tayyar_license" />
 
-                <com.altayyar.app.view.ClickableSpanTextView
+                <com.altayyar.app.presentation.ui.view.ClickableSpanTextView
                     android:id="@+id/aboutWebsiteInfoTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -152,7 +152,7 @@
                     app:layout_constraintTop_toBottomOf="@id/aboutLicenseInfoTextView"
                     tools:text="@string/about_project_site" />
 
-                <com.altayyar.app.view.ClickableSpanTextView
+                <com.altayyar.app.presentation.ui.view.ClickableSpanTextView
                     android:id="@+id/aboutBugsFeaturesInfoTextView"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"

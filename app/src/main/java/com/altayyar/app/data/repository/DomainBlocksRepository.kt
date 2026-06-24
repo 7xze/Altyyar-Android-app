@@ -25,6 +25,8 @@ import androidx.paging.PagingSource
 import at.connyduck.calladapter.networkresult.NetworkResult
 import at.connyduck.calladapter.networkresult.onSuccess
 import com.altayyar.app.data.remote.MastodonApi
+import com.altayyar.app.presentation.ui.feature.domainblocks.DomainBlocksPagingSource
+import com.altayyar.app.presentation.ui.feature.domainblocks.DomainBlocksRemoteMediator
 import javax.inject.Inject
 
 class DomainBlocksRepository @Inject constructor(

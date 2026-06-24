@@ -25,6 +25,7 @@ import com.altayyar.app.presentation.ui.adapter.StatusViewHolder
 import com.altayyar.app.domain.repository.StatusActionListener
 import com.altayyar.app.util.StatusDisplayOptions
 import com.altayyar.app.presentation.state.StatusViewData
+import com.altayyar.app.presentation.state.StatusViewData.Concrete
 
 class SearchStatusesAdapter(
     private val statusDisplayOptions: StatusDisplayOptions,

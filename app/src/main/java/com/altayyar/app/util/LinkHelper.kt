@@ -48,8 +48,8 @@ import com.google.android.material.color.MaterialColors
 import com.altayyar.app.R
 import com.altayyar.app.entity.HashTag
 import com.altayyar.app.entity.Status.Mention
-import com.altayyar.app.interfaces.LinkListener
-import com.altayyar.app.settings.PrefKeys
+import com.altayyar.app.domain.repository.LinkListener
+import com.altayyar.app.data.local.PrefKeys
 import java.net.URI
 import java.net.URISyntaxException
 import java.util.regex.Pattern

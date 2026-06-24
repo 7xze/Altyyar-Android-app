@@ -44,7 +44,7 @@
             android:scaleType="centerInside"
             tools:src="@drawable/errorphant_offline" />
 
-        <com.altayyar.app.view.ClickableSpanTextView
+        <com.altayyar.app.presentation.ui.view.ClickableSpanTextView
             android:id="@+id/messageTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

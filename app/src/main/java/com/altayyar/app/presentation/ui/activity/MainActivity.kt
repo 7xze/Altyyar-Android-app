@@ -70,11 +70,27 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 import com.google.android.material.tabs.TabLayoutMediator
+import com.altayyar.app.BuildConfig
+import com.altayyar.app.R
 import com.altayyar.app.presentation.CacheUpdater
+import com.altayyar.app.presentation.viewmodel.AccountViewData
+import com.altayyar.app.presentation.state.DIRECT
+import com.altayyar.app.presentation.state.HASHTAG
+import com.altayyar.app.presentation.state.HOME
+import com.altayyar.app.presentation.state.LIST
+import com.altayyar.app.presentation.state.NOTIFICATIONS
+import com.altayyar.app.presentation.state.TabData
+import com.altayyar.app.presentation.state.createTabDataFromId
+import com.altayyar.app.presentation.state.defaultTabs
+import com.altayyar.app.presentation.viewmodel.MainViewModel
 import com.altayyar.app.presentation.EventHub
 import com.altayyar.app.presentation.ui.feature.account.AccountActivity
 import com.altayyar.app.presentation.ui.feature.accountlist.AccountListActivity
 import com.altayyar.app.presentation.ui.feature.announcements.AnnouncementsActivity
+import com.altayyar.app.presentation.ui.feature.cart.CartActivity
+import com.altayyar.app.presentation.ui.feature.marketplace.MarketplaceHomeActivity
+import com.altayyar.app.presentation.ui.feature.orders.OrdersActivity
+import com.altayyar.app.presentation.ui.feature.sellerdashboard.SellerDashboardActivity
 import com.altayyar.app.presentation.ui.feature.compose.ComposeActivity
 import com.altayyar.app.presentation.ui.feature.compose.ComposeActivity.Companion.canHandleMimeType
 import com.altayyar.app.presentation.ui.feature.login.LoginActivity
@@ -648,6 +664,34 @@ class MainActivity : BottomSheetActivity(), ActionButtonActivity, MenuProvider {
                     badgeStyle = BadgeStyle().apply {
                         textColor = ColorHolder.fromColor(MaterialColors.getColor(binding.mainDrawer, materialR.attr.colorOnPrimary))
                         color = ColorHolder.fromColor(MaterialColors.getColor(binding.mainDrawer, materialR.attr.colorPrimary))
+                    }
+                },
+                primaryDrawerItem {
+                    nameRes = R.string.marketplace_title
+                    iconRes = R.drawable.ic_list_alt_24dp
+                    onClick = {
+                        startActivityWithSlideInAnimation(MarketplaceHomeActivity.startIntent(context))
+                    }
+                },
+                primaryDrawerItem {
+                    nameRes = R.string.marketplace_cart_title
+                    iconRes = R.drawable.ic_bookmark_24dp
+                    onClick = {
+                        startActivityWithSlideInAnimation(CartActivity.startIntent(context))
+                    }
+                },
+                primaryDrawerItem {
+                    nameRes = R.string.marketplace_my_orders
+                    iconRes = R.drawable.ic_tag_24dp
+                    onClick = {
+                        startActivityWithSlideInAnimation(OrdersActivity.startIntent(context))
+                    }
+                },
+                primaryDrawerItem {
+                    nameRes = R.string.marketplace_seller_dashboard
+                    iconRes = R.drawable.ic_person_24dp
+                    onClick = {
+                        startActivityWithSlideInAnimation(SellerDashboardActivity.startIntent(context))
                     }
                 },
                 DividerDrawerItem(),

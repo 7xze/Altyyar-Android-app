@@ -19,6 +19,7 @@ import android.content.Context
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.fragment.app.Fragment
+import com.altayyar.app.R
 import com.altayyar.app.presentation.ui.feature.conversation.ConversationsFragment
 import com.altayyar.app.presentation.ui.feature.notifications.NotificationsFragment
 import com.altayyar.app.presentation.ui.feature.timeline.TimelineFragment

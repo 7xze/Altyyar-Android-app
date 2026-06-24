@@ -23,7 +23,7 @@ import android.graphics.drawable.Drawable
 import androidx.annotation.AttrRes
 import androidx.appcompat.app.AppCompatDelegate
 import com.google.android.material.color.MaterialColors
-import com.altayyar.app.settings.AppTheme
+import com.altayyar.app.data.local.AppTheme
 
 /**
  * Provides runtime compatibility to obtain theme information and re-theme views, especially where

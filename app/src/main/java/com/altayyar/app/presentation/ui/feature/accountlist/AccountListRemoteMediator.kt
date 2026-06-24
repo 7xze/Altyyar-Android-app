@@ -20,10 +20,13 @@ import androidx.paging.LoadType
 import androidx.paging.PagingState
 import androidx.paging.RemoteMediator
 import at.connyduck.calladapter.networkresult.getOrElse
-import com.altayyar.app.presentation.ui.feature.accountlist.AccountListActivity.Type
 import com.altayyar.app.entity.TimelineAccount
 import com.altayyar.app.data.remote.MastodonApi
+import com.altayyar.app.presentation.state.AccountViewData
+import com.altayyar.app.presentation.state.toViewData
 import com.altayyar.app.util.HttpHeaderLink
+import com.altayyar.app.presentation.ui.feature.accountlist.AccountListActivity.Type
+import com.altayyar.app.presentation.ui.feature.accountlist.AccountListViewModel
 import retrofit2.HttpException
 import retrofit2.Response
 

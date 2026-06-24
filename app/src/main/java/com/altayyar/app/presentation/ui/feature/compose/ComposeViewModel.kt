@@ -48,6 +48,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.asSharedFlow
+import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.shareIn
@@ -81,10 +82,10 @@ class ComposeViewModel @Inject constructor(
     private var currentContent: String? = ""
     private var currentContentWarning: String? = ""
 
-    val instanceInfo: SharedFlow<InstanceInfo> = instanceInfoRepo::getUpdatedInstanceInfoOrFallback.asFlow()
+    val instanceInfo: SharedFlow<InstanceInfo> = flow { emit(instanceInfoRepo.getUpdatedInstanceInfoOrFallback()) }
         .shareIn(viewModelScope, SharingStarted.Eagerly, replay = 1)
 
-    val emoji: SharedFlow<List<Emoji>> = instanceInfoRepo::getEmojis.asFlow()
+    val emoji: SharedFlow<List<Emoji>> = flow { emit(instanceInfoRepo.getEmojis()) }
         .shareIn(viewModelScope, SharingStarted.Eagerly, replay = 1)
 
     private val _markMediaAsSensitive =

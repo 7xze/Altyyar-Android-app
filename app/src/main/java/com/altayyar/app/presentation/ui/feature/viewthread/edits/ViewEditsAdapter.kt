@@ -36,6 +36,8 @@ import com.altayyar.app.util.setClickableText
 import com.altayyar.app.util.show
 import com.altayyar.app.util.visible
 import com.altayyar.app.presentation.state.toViewData
+import com.altayyar.app.presentation.ui.view.ClickableSpanTextView
+import com.altayyar.app.presentation.ui.view.MediaPreviewLayout
 import org.xml.sax.XMLReader
 
 class ViewEditsAdapter(

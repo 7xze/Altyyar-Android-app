@@ -48,6 +48,7 @@ import com.altayyar.app.util.openLink
 import com.altayyar.app.util.show
 import com.altayyar.app.util.viewBinding
 import com.altayyar.app.util.visible
+import com.altayyar.app.presentation.ui.view.BackgroundMessageView
 import com.altayyar.app.presentation.ui.view.ConfirmationBottomSheet.Companion.confirmFavourite
 import com.altayyar.app.presentation.ui.view.ConfirmationBottomSheet.Companion.confirmReblog
 import com.altayyar.app.presentation.state.AttachmentViewData

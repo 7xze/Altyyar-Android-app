@@ -14,6 +14,7 @@ import com.google.android.material.snackbar.Snackbar
 import com.altayyar.app.presentation.ui.activity.BaseActivity
 import com.altayyar.app.R
 import com.altayyar.app.presentation.ui.activity.StatusListActivity
+import com.altayyar.app.presentation.ui.view.BackgroundMessageView
 import com.altayyar.app.databinding.ActivityFollowedTagsBinding
 import com.altayyar.app.domain.repository.HashtagActionListener
 import com.altayyar.app.data.remote.MastodonApi

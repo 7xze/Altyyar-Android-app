@@ -22,7 +22,7 @@
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         tools:visibility="visible" />
 
-    <com.altayyar.app.view.BackgroundMessageView
+    <com.altayyar.app.presentation.ui.view.BackgroundMessageView
         android:id="@+id/messageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

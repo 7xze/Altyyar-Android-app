@@ -23,7 +23,7 @@ import com.altayyar.app.util.CardViewMode;
 import com.altayyar.app.util.LinkHelper;
 import com.altayyar.app.util.NoUnderlineURLSpan;
 import com.altayyar.app.util.StatusDisplayOptions;
-import com.altayyar.app.viewdata.StatusViewData;
+import com.altayyar.app.presentation.state.StatusViewData;
 
 import java.text.DateFormat;
 import java.util.Date;

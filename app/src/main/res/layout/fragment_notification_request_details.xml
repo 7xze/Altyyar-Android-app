@@ -9,7 +9,7 @@
         android:layout_height="match_parent"
         android:clipToPadding="false" />
 
-    <com.altayyar.app.view.BackgroundMessageView
+    <com.altayyar.app.presentation.ui.view.BackgroundMessageView
         android:id="@+id/statusView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

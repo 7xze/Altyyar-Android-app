@@ -20,7 +20,7 @@
         tools:itemCount="5"
         tools:listitem="@layout/item_notification_request" />
 
-    <com.altayyar.app.view.BackgroundMessageView
+    <com.altayyar.app.presentation.ui.view.BackgroundMessageView
         android:id="@+id/notificationRequestsMessageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

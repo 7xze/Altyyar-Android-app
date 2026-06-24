@@ -21,6 +21,7 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.altayyar.app.R
+import com.altayyar.app.presentation.state.ConversationViewData
 import com.altayyar.app.presentation.ui.adapter.PlaceholderViewHolder
 import com.altayyar.app.presentation.ui.adapter.StatusBaseViewHolder
 import com.altayyar.app.databinding.ItemPlaceholderBinding

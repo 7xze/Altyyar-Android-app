@@ -62,7 +62,7 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <com.altayyar.app.view.TayyarSwipeRefreshLayout
+        <com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
             android:id="@+id/swipeRefreshLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -76,9 +76,9 @@
                 android:clipToPadding="false"
                 android:paddingBottom="@dimen/recyclerview_bottom_padding_actionbutton" />
 
-        </com.altayyar.app.view.TayyarSwipeRefreshLayout>
+        </com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout>
 
-        <com.altayyar.app.view.BackgroundMessageView
+        <com.altayyar.app.presentation.ui.view.BackgroundMessageView
             android:id="@+id/statusView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

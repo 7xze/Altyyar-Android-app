@@ -73,8 +73,10 @@ import com.altayyar.app.util.show
 import com.altayyar.app.util.startActivityWithSlideInAnimation
 import com.altayyar.app.util.updateRelativeTimePeriodically
 import com.altayyar.app.util.viewBinding
+import com.altayyar.app.presentation.ui.view.BackgroundMessageView
 import com.altayyar.app.presentation.ui.view.ConfirmationBottomSheet.Companion.confirmFavourite
 import com.altayyar.app.presentation.ui.view.ConfirmationBottomSheet.Companion.confirmReblog
+import com.altayyar.app.presentation.ui.view.TayyarSwipeRefreshLayout
 import com.altayyar.app.presentation.state.AttachmentViewData
 import com.altayyar.app.presentation.state.NotificationViewData
 import com.altayyar.app.presentation.state.TranslationViewData

@@ -30,10 +30,10 @@ import com.altayyar.app.R
 import com.altayyar.app.entity.Attachment
 import com.altayyar.app.entity.Emoji
 import com.altayyar.app.entity.Status
-import com.altayyar.app.view.MediaPreviewImageView
-import com.altayyar.app.viewdata.PollViewData
-import com.altayyar.app.viewdata.buildDescription
-import com.altayyar.app.viewdata.calculatePercent
+import com.altayyar.app.presentation.ui.view.MediaPreviewImageView
+import com.altayyar.app.presentation.state.PollViewData
+import com.altayyar.app.presentation.state.buildDescription
+import com.altayyar.app.presentation.state.calculatePercent
 import java.text.NumberFormat
 import kotlin.math.min
 
